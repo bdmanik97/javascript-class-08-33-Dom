@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 33</title>
+</head>
+<body>
+    
+    <div id="test">
+
+        <span>yyyyyy</span>
+        <h1>tttttttt</h1>
+    </div>
+
+
+    <script>
+    // Tag Creat start here
+    //     let divElement = document.createElement('div');
+    //     divElement.innerHTML = 'this is div tag'
+
+    // // body tag e Output Show kra start here
+    //     document.body.appendChild(divElement);
+    // body tag e Output Show kra end here
+
+    // Tag Creat end here
+    
+    // Creat Tag k Before/After start here
+        let pElement = document.createElement('p');
+        pElement.innerHTML = 'this is a pElement'
+
+        let divElement = document.querySelector('#test'); //kar Modhe
+        let spanElement = document.querySelector('span'); //kar samne
+        divElement.insertBefore(pElement, spanElement); //Before/After
+    // Creat Tag k Before/After end here
+    </script>
+</body>
+</html>
